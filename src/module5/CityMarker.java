@@ -51,16 +51,18 @@ public class CityMarker extends CommonMarker {
 	/** Show the title of the city if this marker is selected */
 	public void showTitle(PGraphics pg, float x, float y)
 	{
-		String name = "Name: " + getCity();
-		String country = "\nCountry: " + getCountry();
-		String population = "\nPopulation: " + getPopulation();
-		double maxLength = Math.max(Math.max(pg.textWidth(name), pg.textWidth(country)),
-                pg.textWidth(population)) + 6;
+		if (!hidden) {
+			String name = "Name: " + getCity();
+			String country = "\nCountry: " + getCountry();
+			String population = "\nPopulation: " + getPopulation();
+			double maxLength = Math.max(Math.max(pg.textWidth(name), pg.textWidth(country)),
+					pg.textWidth(population)) + 6;
 
-		pg.fill(255, 255, 204);
-		pg.rect(x - radius, y + 1.5f * radius, (float)maxLength + 1f, 60);
-		pg.fill(0);
-		pg.text(name + country + population, x - radius + 3, y + 1.5f * radius + 30);
+			pg.fill(255, 255, 204);
+			pg.rect(x - radius, y + 1.5f * radius, (float) maxLength + 1f, 60);
+			pg.fill(0);
+			pg.text(name + country + population, x - radius + 3, y + 1.5f * radius + 30);
+		}
 	}
 	
 	

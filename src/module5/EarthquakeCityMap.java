@@ -122,7 +122,6 @@ public class EarthquakeCityMap extends PApplet {
 			g.beginDraw();
 			lastSelected.showTitle(g, mouseX, mouseY);
 			g.endDraw();
-//			image(buffer.get(), mouseX, mouseY);
 		}
 	}
 	

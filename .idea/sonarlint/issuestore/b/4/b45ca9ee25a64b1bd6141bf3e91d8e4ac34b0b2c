@@ -1,0 +1,65 @@
+
+gsquid:S1192¾"HDefine a constant instead of duplicating this literal "country" 3 times.(‹â¸Ç8—Œ£àê,
+esquid:S2184’"ACast one of the operands of this addition operation to a "float".(–ë§Áıÿÿÿÿ8—Œ£àê,
+Qsquid:S1948>".Make "lastSelected" transient or serializable.(Ú©²£üÿÿÿÿ8—Œ£àê,
+asquid:S2184Ÿ"DCast one of the operands of this subtraction operation to a "float".(Úœõıÿÿÿÿ
+‡"squid:ClassVariableVisibilityCheck'"YMake mbTilesString a static final constant or non-public and provide accessors if needed.(›ÌŒÂ
+Ysquid:S2184“"ACast one of the operands of this addition operation to a "float".(º‰Îô
+^squid:S2184Ÿ"ACast one of the operands of this addition operation to a "float".(Úœõıÿÿÿÿ
+`squid:S2184ñ"ACast one of the operands of this addition operation to a "float".(¯¿©ÿ8—Œ£àê,
+^squid:S2184€"ACast one of the operands of this addition operation to a "float".(ï¦Ûõøÿÿÿÿ
+csquid:S2184‡"DCast one of the operands of this subtraction operation to a "float".(‹¢¼€8—Œ£àê,
+esquid:S2184Š"ACast one of the operands of this addition operation to a "float".(‰¨ºùÿÿÿÿ8—Œ£àê,
+|squid:S2293`"YReplace the type specification in this constructor call with the diamond operator ("<>").(˜¬ù°ûÿÿÿÿ8—Œ£àê,
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÎâøĞşÿÿÿÿ
+`squid:S2184"ACast one of the operands of this addition operation to a "float".(ÚĞ…8—Œ£àê,
+esquid:S2184Œ"ACast one of the operands of this addition operation to a "float".(šº™ıÿÿÿÿ8—Œ£àê,
+Ssquid:S1948;"0Make "countryMarkers" transient or serializable.(áÙşõùÿÿÿÿ8—Œ£àê,
+esquid:S2184ş"ACast one of the operands of this addition operation to a "float".(µÇõÀøÿÿÿÿ8—Œ£àê,
+^squid:S2184”"ACast one of the operands of this addition operation to a "float".(åõİ½üÿÿÿÿ
+`squid:S2184–"ACast one of the operands of this addition operation to a "float".(ÎÕÛÔ8—Œ£àê,
+vsquid:S3776¨"RRefactor this method to reduce its Cognitive Complexity from 34 to the 15 allowed.(Üøöóüÿÿÿÿ8—Œ£àê,
+esquid:S2184ş"ACast one of the operands of this addition operation to a "float".(µÇõÀøÿÿÿÿ8—Œ£àê,
+^squid:S2184÷"ACast one of the operands of this addition operation to a "float".(”²áÇüÿÿÿÿ
+Psquid:S1948?"-Make "lastClicked" transient or serializable.(ğå¹ëÿÿÿÿÿ8Ø…Õßê,
+isquid:CommentedOutCodeLine}"<This block of commented-out lines of code should be removed.(³š”·8—Œ£àê,
+Ksquid:S19485"-Make "cityMarkers" transient or serializable.(ÛêŒ8—Œ£àê,
+^squid:S2184Ÿ"ACast one of the operands of this addition operation to a "float".(Úœõıÿÿÿÿ
+^squid:S2184€"ACast one of the operands of this addition operation to a "float".(ï¦Ûõøÿÿÿÿ
+bsquid:UnusedPrivateMethod·"0Remove this unused private "printQuakes" method.(…†·òûÿÿÿÿ8—Œ£àê,
+hsquid:S2184ö"DCast one of the operands of this subtraction operation to a "float".(ãüëøÿÿÿÿ8—Œ£àê,
+Ysquid:S2184“"ACast one of the operands of this addition operation to a "float".(º‰Îô
+Fsquid:S19480"(Make "buffer" transient or serializable.(¢ãô‰8—Œ£àê,
+osquid:CommentedOutCodeLine«"<This block of commented-out lines of code should be removed.(ßÙ¿™ÿÿÿÿÿ8—Œ£àê,
+`squid:S2184"ACast one of the operands of this addition operation to a "float".(…¤ş§8—Œ£àê,
+esquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(ÈĞàŸ
+`squid:S2184ü"ACast one of the operands of this addition operation to a "float".(¦›ûÎ8—Œ£àê,
+W
+squid:S106É"9Replace this use of System.out or System.err by a logger.(ÅòŸˆ8—Œ£àê,
+esquid:S2184Š"ACast one of the operands of this addition operation to a "float".(‰¨ºùÿÿÿÿ8—Œ£àê,
+`squid:S2184ƒ"ACast one of the operands of this addition operation to a "float".(¥Şá8—Œ£àê,
+Ysquid:S2184„"ACast one of the operands of this addition operation to a "float".(ëÒàö
+^squid:S2184ÿ"ACast one of the operands of this addition operation to a "float".(ûß âûÿÿÿÿ
+csquid:S2184"DCast one of the operands of this subtraction operation to a "float".(…¤ş§8—Œ£àê,
+asquid:S2184Ÿ"DCast one of the operands of this subtraction operation to a "float".(Úœõıÿÿÿÿ
+Jsquid:S1444'"3Make this "public static mbTilesString" field final(›ÌŒÂ
+Csquid:S19482"%Make "map" transient or serializable.(÷Êä8—Œ£àê,
+|squid:S2293Y"YReplace the type specification in this constructor call with the diamond operator ("<>").(ĞÍÕüûÿÿÿÿ8—Œ£àê,
+`squid:S2184"ACast one of the operands of this addition operation to a "float".(ÚĞ…8—Œ£àê,
+`squid:S2184"ACast one of the operands of this addition operation to a "float".(…¤ş§8—Œ£àê,
+isquid:CommentedOutCodeLinem"<This block of commented-out lines of code should be removed.(–ø»8—Œ£àê,
+^squid:S2184÷"ACast one of the operands of this addition operation to a "float".(”²áÇüÿÿÿÿ
+hsquid:S2184ö"DCast one of the operands of this subtraction operation to a "float".(ãüëøÿÿÿÿ8—Œ£àê,
+csquid:S2184‡"DCast one of the operands of this subtraction operation to a "float".(‹¢¼€8—Œ£àê,
+Xsquid:S2184ø"ACast one of the operands of this addition operation to a "float".(Ê¹÷s
+vsquid:S00117ô"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ”—®üÿÿÿÿ8—Œ£àê,
+`squid:S2184ñ"ACast one of the operands of this addition operation to a "float".(¯¿©ÿ8—Œ£àê,
+^squid:S2184ÿ"ACast one of the operands of this addition operation to a "float".(ûß âûÿÿÿÿ
+^squid:S2184”"ACast one of the operands of this addition operation to a "float".(åõİ½üÿÿÿÿ
+`squid:S2184–"ACast one of the operands of this addition operation to a "float".(ÎÕÛÔ8—Œ£àê,
+csquid:S2184"DCast one of the operands of this subtraction operation to a "float".(…¤ş§8—Œ£àê,
+Ssquid:EmptyStatementUsageCheck"Remove this empty statement.(ôŸìúÿÿÿÿ8—Œ£àê,
+esquid:S2184Œ"ACast one of the operands of this addition operation to a "float".(šº™ıÿÿÿÿ8—Œ£àê,
+esquid:S2184’"ACast one of the operands of this addition operation to a "float".(–ë§Áıÿÿÿÿ8—Œ£àê,
+osquid:S00117õ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õîôîúÿÿÿÿ
+Lsquid:S19488".Make "quakeMarkers" transient or serializable.(ºÅ¥³8—Œ£àê,

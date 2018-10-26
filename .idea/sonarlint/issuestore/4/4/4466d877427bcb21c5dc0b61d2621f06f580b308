@@ -1,0 +1,23 @@
+
+`squid:S1192Î"HDefine a constant instead of duplicating this literal "country" 3 times.(‹â¸Ç
+usquid:S2293]"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÐÍÕüûÿÿÿÿ
+usquid:S2293d"YReplace the type specification in this constructor call with the diamond operator ("<>").(˜¬ù°ûÿÿÿÿ
+tsquid:S1450."]Remove the "earthquakesURL" field and declare it as a local variable in the relevant methods.(ðé¨ä
+qsquid:S14508"ZRemove the "cityMarkers" field and declare it as a local variable in the relevant methods.(ŽÛêŒ
+Jsquid:S1444)"3Make this "public static mbTilesString" field final(›ÌŒÂ
+gsquid:CommentedOutCodeLineI"<This block of commented-out lines of code should be removed.(Ôéþ¸ûÿÿÿÿ
+asquid:CommentedOutCodeLineO"<This block of commented-out lines of code should be removed.(Øì·W
+P
+squid:S106Ù"9Replace this use of System.out or System.err by a logger.(ÅòŸˆ
+‡"squid:ClassVariableVisibilityCheck)"YMake mbTilesString a static final constant or non-public and provide accessors if needed.(›ÌŒÂ
+wsquid:S00115&"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(­›ôÇþÿÿÿÿ
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†þ—
+usquid:UselessImportCheck"LRemove this unused import 'de.fhpotsdam.unfolding.marker.SimplePointMarker'.(þ±´Öýÿÿÿÿ
+msquid:UselessImportCheck"DRemove this unused import 'de.fhpotsdam.unfolding.providers.Google'.(è„û«øÿÿÿÿ
+<squid:S19485"%Make "map" transient or serializable.(÷Êä
+Dsquid:S19488"-Make "cityMarkers" transient or serializable.(ŽÛêŒ
+Esquid:S1948:".Make "quakeMarkers" transient or serializable.(ºÅ¥³
+Lsquid:S1948="0Make "countryMarkers" transient or serializable.(áÙþõùÿÿÿÿ
+Vsquid:S1161?":Add the "@Override" annotation above this method signature(œô«Ýýÿÿÿÿ
+Qsquid:S1161}":Add the "@Override" annotation above this method signature(ÄÿÍ¤
+esquid:MaximumInheritanceDepth "<This class has 6 parents which is greater than 5 authorized.(ÈÐàŸ

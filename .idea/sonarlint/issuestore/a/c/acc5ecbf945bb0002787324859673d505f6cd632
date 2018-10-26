@@ -1,0 +1,9 @@
+
+psquid:S2293N"YReplace the type specification in this constructor call with the diamond operator ("<>").(éùÓÔ
+Asquid:S1948"%Make "map" transient or serializable.(ÖºÚìøÿÿÿÿ
+Dsquid:S1948"-Make "lifeExpByCountry" private or transient.(ØÇ”°
+Gsquid:S1948"+Make "countries" transient or serializable.(ëÀşŒûÿÿÿÿ
+Gsquid:S1948"0Make "countryMarkers" transient or serializable.(†‹‘ì
+Vsquid:S1161!":Add the "@Override" annotation above this method signature(œô«İıÿÿÿÿ
+Qsquid:S11614":Add the "@Override" annotation above this method signature(ÄÿÍ¤
+jsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(µ·ÉĞıÿÿÿÿ

@@ -1,0 +1,28 @@
+
+bsquid:S1192_"FDefine a constant instead of duplicating this literal "title" 5 times.(šÄï§üÿÿÿÿ
+Rsquid:S1161½":Add the "@Override" annotation above this method signature(ÄÿÍ¤
+esquid:MaximumInheritanceDepth "<This class has 6 parents which is greater than 5 authorized.(Æôã
+Vsquid:S11617":Add the "@Override" annotation above this method signature(œô«İıÿÿÿÿ
+lsquid:UselessImportCheck"CRemove this unused import 'de.fhpotsdam.unfolding.core.Coordinate'.(ìµ¢¢úÿÿÿÿ
+psquid:S2293†"YReplace the type specification in this constructor call with the diamond operator ("<>").(¯ËÇo
+psquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Â„±Ö
+hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(£› ïùÿÿÿÿ
+\squid:UnusedPrivateMethod·"1Remove this unused private "createMarker" method.(ëŞ×ƒùÿÿÿÿ
+bsquid:CommentedOutCodeLineW"<This block of commented-out lines of code should be removed.(Ïñ·
+hsquid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(£› ïùÿÿÿÿ
+bsquid:CommentedOutCodeLineQ"<This block of commented-out lines of code should be removed.(¯¤
+‡"squid:ClassVariableVisibilityCheck."YMake mbTilesString a static final constant or non-public and provide accessors if needed.(›ÌŒÂ
+Isquid:S10684"2Remove this unused "earthquakesURL" private field.(ğé¨ä
+Jsquid:S1444."3Make this "public static mbTilesString" field final(›ÌŒÂ
+fsquid:S1192`"JDefine a constant instead of duplicating this literal "magnitude" 5 times.(¿Ø—ôûÿÿÿÿ
+bsquid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(¥™±›
+csquid:CommentedOutCodeLine¤"<This block of commented-out lines of code should be removed.(Æºó
+Osquid:S1135¶"2Complete the task associated to this TODO comment.(Ì€”ÿøÿÿÿÿ
+<squid:S19481"%Make "map" transient or serializable.(÷Êä
+csquid:CommentedOutCodeLine¨"<This block of commented-out lines of code should be removed.(ãäÙÆ
+bsquid:CommentedOutCodeLineJ"<This block of commented-out lines of code should be removed.(¯¤
+wsquid:S00115&"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(­›ôÇşÿÿÿÿ
+bsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(ı«ã¾
+Gsquid:S1068&"+Remove this unused "offline" private field.(­›ôÇşÿÿÿÿ
+Jsquid:S1135Å"2Complete the task associated to this TODO comment.(£ù‰ù
+hsquid:CommentedOutCodeLine®"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ

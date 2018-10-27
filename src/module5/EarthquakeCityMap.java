@@ -1,9 +1,6 @@
 package module5;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import de.fhpotsdam.unfolding.UnfoldingMap;
@@ -106,7 +103,7 @@ public class EarthquakeCityMap extends PApplet {
 		  }
 	    }
 	    // could be used for debugging
-//	    printQuakes();
+	    sortAndPrint(50000);
 
 	    map.addMarkers(quakeMarkers);
 	    map.addMarkers(cityMarkers);
@@ -326,6 +323,16 @@ public class EarthquakeCityMap extends PApplet {
 			System.out.println(entry.getKey() + ": " + entry.getValue());
 		}
 	}
+
+	private void sortAndPrint(int numToPrint) {
+		quakeMarkers
+                .stream()
+                .map(x -> (EarthquakeMarker)x)
+                .sorted()
+                .limit(numToPrint)
+                .forEach(System.out::println);
+	}
+
 	
 	
 	

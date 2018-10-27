@@ -10,6 +10,7 @@ import processing.core.PGraphics;
  *
  */
 public abstract class EarthquakeMarker extends CommonMarker
+        implements Comparable<EarthquakeMarker>
 {
 	
 	// Did the earthquake occur on land?  This will be set by the subclasses.
@@ -145,6 +146,16 @@ public abstract class EarthquakeMarker extends CommonMarker
 	
 	public boolean isOnLand() {
 		return isOnLand;
+	}
+
+	@Override
+	public int compareTo(EarthquakeMarker o) {
+		if (getMagnitude() > o.getMagnitude()) {
+			return -1;
+		} else if (getMagnitude() < o.getMagnitude()) {
+			return 1;
+		}
+		return 0;
 	}
 
 	@Override

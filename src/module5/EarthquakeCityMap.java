@@ -135,6 +135,21 @@ public class EarthquakeCityMap extends PApplet {
         }
     }
 
+    @Override
+    public void keyPressed() {
+        if (keyCode >= '1' || keyCode <= '9') {
+            unhideMarkers();
+            for (Marker quake : quakeMarkers) {
+                if ((float) quake.getProperty("magnitude") <= Character.getNumericValue(keyCode)) {
+                    quake.setHidden(true);
+                }
+            }
+        }
+        if (keyCode == 8) {
+            unhideMarkers();
+        }
+    }
+
     /** Event handler that gets called automatically when the
 	 * mouse moves.
 	 */

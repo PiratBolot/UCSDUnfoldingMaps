@@ -18,6 +18,7 @@ import de.fhpotsdam.unfolding.utils.ScreenPosition;
 import parsing.ParseFeed;
 import processing.core.PApplet;
 import processing.core.PGraphics;
+import processing.core.PImage;
 
 /** EarthquakeCityMap
  * An application with an interactive map displaying earthquake data.
@@ -82,11 +83,16 @@ public class EarthquakeCityMap extends PApplet {
 		countryMarkers = MapUtils.createSimpleMarkers(countries);
 
 		//     STEP 2: read in city data
+        PImage image = loadImage("./data/CitySprite.png");
 		List<Feature> cities = GeoJSONReader.loadData(this, cityFile);
 		cityMarkers = new ArrayList<Marker>();
 		for(Feature city : cities) {
-		  cityMarkers.add(new CityMarker(city));
-		}
+            try {
+                cityMarkers.add(new CityMarker(city, image.clone()));
+            } catch (CloneNotSupportedException e) {
+                e.printStackTrace();
+            }
+        }
 	    
 		//     STEP 3: read in earthquake RSS feed
 	    List<PointFeature> earthquakes = ParseFeed.parseEarthquake(this, earthquakesURL);
@@ -268,24 +274,23 @@ public class EarthquakeCityMap extends PApplet {
 		fill(150, 30, 30);
 		int tri_xbase = xbase + 35;
 		int tri_ybase = ybase + 50;
-		triangle(tri_xbase, tri_ybase-CityMarker.TRI_SIZE, tri_xbase-CityMarker.TRI_SIZE, 
-				tri_ybase+CityMarker.TRI_SIZE, tri_xbase+CityMarker.TRI_SIZE, 
-				tri_ybase+CityMarker.TRI_SIZE);
+		image(CityMarker.pImage, tri_xbase - (CityMarker.BASE_SIZE >> 1),
+                tri_ybase - (CityMarker.BASE_SIZE >> 1));
 
 		fill(0, 0, 0);
 		textAlign(LEFT, CENTER);
 		text("City Marker", tri_xbase + 15, tri_ybase);
 		
-		text("Land Quake", xbase+50, ybase+70);
-		text("Ocean Quake", xbase+50, ybase+90);
-		text("Size ~ Magnitude", xbase+25, ybase+110);
+		text("Land Quake", xbase+50, ybase+75);
+		text("Ocean Quake", xbase+50, ybase+95);
+		text("Size ~ Magnitude", xbase+25, ybase+115);
 		
 		fill(255, 255, 255);
 		ellipse(xbase+35, 
-				ybase+70, 
+				ybase+75,
 				10, 
 				10);
-		rect(xbase+35-5, ybase+90-5, 10, 10);
+		rect(xbase+35-5, ybase+90, 10, 10);
 		
 		fill(color(255, 255, 0));
 		ellipse(xbase + 35, ybase + 140, 12, 12);

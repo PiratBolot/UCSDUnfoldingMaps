@@ -1,10 +1,10 @@
 
-Wsquid:S2130c";Use "Float.parseFloat" for this string-to-float conversion.(¼•ûşÿÿÿÿ
-vsquid:S2293É"YReplace the type specification in this constructor call with the diamond operator ("<>").(İœ¸æüÿÿÿÿ
-vsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¬¿ş‡ÿÿÿÿÿ
-usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¬¿ş‡ÿÿÿÿÿ
-Vsquid:S1118":Add a private constructor to hide the implicit public one.(ıüé£øÿÿÿÿ
-Rsquid:S2130b";Use "Float.parseFloat" for this string-to-float conversion.(ôäé£
-hsquid:CommentedOutCodeLineš"<This block of commented-out lines of code should be removed.(ÿğ›¨ùÿÿÿÿ
-qsquid:S2293÷"YReplace the type specification in this constructor call with the diamond operator ("<>").(–şÌ¢
 …squid:S1319õ"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ß‰Áí
+hsquid:CommentedOutCodeLineš"<This block of commented-out lines of code should be removed.(ÿğ›¨ùÿÿÿÿ
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(ıüé£øÿÿÿÿ
+qsquid:S2293÷"YReplace the type specification in this constructor call with the diamond operator ("<>").(–şÌ¢
+vsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¬¿ş‡ÿÿÿÿÿ
+Rsquid:S2130b";Use "Float.parseFloat" for this string-to-float conversion.(ôäé£
+usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¬¿ş‡ÿÿÿÿÿ
+vsquid:S2293É"YReplace the type specification in this constructor call with the diamond operator ("<>").(İœ¸æüÿÿÿÿ
+Wsquid:S2130c";Use "Float.parseFloat" for this string-to-float conversion.(¼•ûşÿÿÿÿ

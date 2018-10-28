@@ -57,8 +57,6 @@ Q
 !src/module6/EarthquakeMarker.java,6/5/65c8dbb4b9be49d4ace1f8d1d3dc5b8dcc29ec9e
 Q
 !src/module6/OceanQuakeMarker.java,8/1/81af579073b80cc73b1765806bfaa013b7bf697b
-R
-"src/module6/EarthquakeCityMap.java,d/b/db05804a8c5341ab33901325d011ba8bf0bc6933
 J
 src/parsing/ParseFeed.java,8/b/8b1e574862a1359f8995e1f3d93fb69e45089b60
 F

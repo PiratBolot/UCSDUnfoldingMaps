@@ -1,4 +1,5 @@
 
+wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Àè¶»üÿÿÿÿ
+}squid:S1210˜"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(øîÚ‘üÿÿÿÿ8òíŽ¸ë,
+qsquid:S1488i"ZImmediately return this expression instead of assigning it to the temporary variable "km".(Ì¬¶¥
 wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÎâøÐþÿÿÿÿ
-qsquid:S1488h"ZImmediately return this expression instead of assigning it to the temporary variable "km".(Ì¬¶¥
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Àè¶»üÿÿÿÿ

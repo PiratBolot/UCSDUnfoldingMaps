@@ -121,8 +121,15 @@ public class EarthquakeCityMap extends PApplet {
 			g.endDraw();
 		}
 	}
-	
-	/** Event handler that gets called automatically when the 
+
+    @Override
+    public void mouseDragged() {
+        if (lastClicked != null && lastClicked instanceof OceanQuakeMarker) {
+            changeProperties();
+        }
+    }
+
+    /** Event handler that gets called automatically when the
 	 * mouse moves.
 	 */
 	@Override
@@ -164,51 +171,73 @@ public class EarthquakeCityMap extends PApplet {
 	public void mouseClicked()
 	{
 		if (lastClicked != null) {
-//			noStroke();
-			unhideMarkers();
-			lastClicked.setClicked(false);
-			lastClicked = null;
+            if (lastSelected == null) {
+                unhideMarkers();
+                lastClicked.setClicked(false);
+                lastClicked = null;
+            } else {
+                unhideMarkers();
+                lastClicked.setClicked(false);
+                lastClicked = lastSelected;
+                lastClicked.setClicked(true);
+                hideUnrelevantMarkers();
+            }
 		} else if (lastSelected != null) {
 			lastClicked = lastSelected;
 			lastClicked.setClicked(true);
-			if (lastSelected instanceof CityMarker) {
-				List<EarthquakeMarker> list = quakeMarkers
-						.stream()
-						.map(elem -> (EarthquakeMarker)elem)
-						.collect(Collectors.toList());
-				for (EarthquakeMarker marker : list) {
-					if (lastSelected.getDistanceTo(marker.getLocation()) > marker.threatCircle()) {
-						marker.setHidden(true);
-					}
-				}
-				for (Marker marker : cityMarkers) {
-					if (lastSelected != marker) {
-						marker.setHidden(true);
-					}
-				}
-			} else {
-				HashMap<String, Object> properties = lastClicked.getProperties();
-				List<ScreenPosition> tc = new ArrayList<>();
-				double thrCircle = ((EarthquakeMarker)(lastSelected)).threatCircle();
-				for (Marker city : cityMarkers) {
-					if (city.getDistanceTo(lastSelected.getLocation()) > thrCircle) {
-						city.setHidden(true);
-					} else {
-						ScreenPosition sp = ((CityMarker) city).getScreenPosition(map);
-						tc.add(sp);
-					}
-				}
-				properties.put("threatedCities", tc);
-				lastClicked.setProperties(properties);
-				for (Marker quake : quakeMarkers) {
-					if (lastSelected != quake) {
-						quake.setHidden(true);
-					}
-				}
-			}
+			hideUnrelevantMarkers();
 		}
 	}
-	
+
+    private void hideUnrelevantMarkers() {
+        if (lastClicked instanceof CityMarker) {
+            hideIfCityMarker();
+        } else {
+            hideIfQuakeMarker();
+        }
+    }
+
+    private void hideIfCityMarker() {
+        List<EarthquakeMarker> list = quakeMarkers
+                .stream()
+                .map(elem -> (EarthquakeMarker)elem)
+                .collect(Collectors.toList());
+        for (EarthquakeMarker marker : list) {
+            if (lastClicked.getDistanceTo(marker.getLocation()) > marker.threatCircle()) {
+                marker.setHidden(true);
+            }
+        }
+        for (Marker marker : cityMarkers) {
+            if (lastClicked != marker) {
+                marker.setHidden(true);
+            }
+        }
+    }
+
+    private void hideIfQuakeMarker() {
+        changeProperties();
+        for (Marker quake : quakeMarkers) {
+            if (lastClicked != quake) {
+                quake.setHidden(true);
+            }
+        }
+    }
+
+    private void changeProperties() {
+        HashMap<String, Object> properties = lastClicked.getProperties();
+        List<ScreenPosition> tc = new ArrayList<>();
+        double thrCircle = ((EarthquakeMarker)(lastClicked)).threatCircle();
+        for (Marker city : cityMarkers) {
+            if (city.getDistanceTo(lastClicked.getLocation()) > thrCircle) {
+                city.setHidden(true);
+            } else {
+                ScreenPosition sp = ((CityMarker) city).getScreenPosition(map);
+                tc.add(sp);
+            }
+        }
+        properties.put("threatedCities", tc);
+        lastClicked.setProperties(properties);
+    }
 	
 	// loop over and unhide all markers
 	private void unhideMarkers() {
@@ -217,8 +246,8 @@ public class EarthquakeCityMap extends PApplet {
 		}
 			
 		for(Marker marker : cityMarkers) {
-			marker.setHidden(false);
-		}
+            marker.setHidden(false);
+        }
 	}
 	
 	// helper method to draw key in GUI
@@ -259,28 +288,28 @@ public class EarthquakeCityMap extends PApplet {
 		rect(xbase+35-5, ybase+90-5, 10, 10);
 		
 		fill(color(255, 255, 0));
-		ellipse(xbase+35, ybase+140, 12, 12);
+		ellipse(xbase + 35, ybase + 140, 12, 12);
 		fill(color(0, 0, 255));
-		ellipse(xbase+35, ybase+160, 12, 12);
+		ellipse(xbase + 35, ybase + 160, 12, 12);
 		fill(color(255, 0, 0));
-		ellipse(xbase+35, ybase+180, 12, 12);
+		ellipse(xbase + 35, ybase + 180, 12, 12);
 		
 		textAlign(LEFT, CENTER);
 		fill(0, 0, 0);
-		text("Shallow", xbase+50, ybase+140);
-		text("Intermediate", xbase+50, ybase+160);
-		text("Deep", xbase+50, ybase+180);
+		text("Shallow", xbase + 50, ybase + 140);
+		text("Intermediate", xbase + 50, ybase + 160);
+		text("Deep", xbase + 50, ybase + 180);
 
-		text("Past hour", xbase+50, ybase+200);
+		text("Past hour", xbase + 50, ybase + 200);
 		
 		fill(255, 255, 255);
-		int centerx = xbase+35;
-		int centery = ybase+200;
+		int centerx = xbase + 35;
+		int centery = ybase + 200;
 		ellipse(centerx, centery, 12, 12);
 
 		strokeWeight(2);
-		line(centerx-8, centery-8, centerx+8, centery+8);
-		line(centerx-8, centery+8, centerx+8, centery-8);
+		line(centerx - 8, centery - 8, centerx + 8, centery + 8);
+		line(centerx - 8, centery + 8, centerx + 8, centery - 8);
 	}
 
 	
@@ -332,8 +361,6 @@ public class EarthquakeCityMap extends PApplet {
                 .limit(numToPrint)
                 .forEach(System.out::println);
 	}
-
-	
 	
 	
 	// helper method to test whether a given earthquake is in a given country

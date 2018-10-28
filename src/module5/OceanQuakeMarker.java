@@ -38,8 +38,4 @@ public class OceanQuakeMarker extends EarthquakeMarker {
 			pg.popStyle();
 		}
 	}
-	
-
-	
-
 }

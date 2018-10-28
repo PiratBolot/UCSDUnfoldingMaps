@@ -1,6 +1,6 @@
 
+‡"squid:ClassVariableVisibilityCheck"TMake TRI_SIZE a static final constant or non-public and provide accessors if needed.(¢‰â¬úÿÿÿÿ
+bsquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(ö…æÀ
 osquid:S3008"SRename this field "TRI_SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢‰â¬úÿÿÿÿ
 Jsquid:S1444".Make this "public static TRI_SIZE" field final(¢‰â¬úÿÿÿÿ
-bsquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(ö…æÀ
-‡"squid:ClassVariableVisibilityCheck"TMake TRI_SIZE a static final constant or non-public and provide accessors if needed.(¢‰â¬úÿÿÿÿ
 qsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Áž…
